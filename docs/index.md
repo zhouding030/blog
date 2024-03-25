@@ -8,7 +8,7 @@
         text: 关注技术
         tagline: 整合个人技术资源
         actions:
-        - theme: alt
-        text: git地址
-        link: https://github.com/zhouding030/
+            - theme: alt
+              text: git地址
+              link: https://github.com/zhouding030/
 ---
