@@ -25,17 +25,23 @@ export default {
                 collapsible: true,
                 items: [
                     {
-                        text: "整体理解",
-                        link: "/ddd/0.md",
+                        text: "DDD整体理解",
+                        link: "/ddd/DDD整体理解.md",
                     },{
-                        text: "战术设计",
-                        link: "/ddd/1.md",
+                        ext: "DDD落地实战",
+                       link: "/ddd/DDD落地实战.md",
                     },{
-                         text: "领域建模",
-                         link: "/ddd/2.md",
+                        text: "DDD领域建模",
+                        link: "/ddd/DDD领域建模.md",
+                    },{
+                        text: "DDD划分限界上下文",
+                        link: "/ddd/DDD划分限界上下文.md",
+                    },{
+                         text: "DDD战术设计",
+                         link: "/ddd/DDD战术设计.md",
                      },{
-                         text: "落地实战",
-                         link: "/ddd/3.md",
+                         text: "DDD构建代码结构",
+                         link: "/ddd/DDD构建代码结构.md",
                      }
                 ],
             },
