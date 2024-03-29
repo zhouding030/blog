@@ -3,7 +3,7 @@ export default {
     description: '我的第一个博客',
     // 打包目录
     dest: './dist',
-    base: "/blog",
+    base: "/",
     head: [
         // 添加图标
         ['link', {rel: 'icon', href: '/favicon.ico'}]
