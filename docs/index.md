@@ -11,4 +11,7 @@
             - theme: alt
               text: git地址
               link: https://github.com/zhouding030/
+            - theme: brand
+              text: 开始阅读
+              link: /readme/0.md
 ---
