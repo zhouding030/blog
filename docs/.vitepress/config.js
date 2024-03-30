@@ -1,6 +1,6 @@
 export default {
-    title: 'ZhouDing个人博客',
-    description: '我的第一个博客',
+    title: 'ZhouDing个人技术博客',
+    description: '个人技术博客',
     // 打包目录
     dest: './dist',
     base: "/",
@@ -9,10 +9,17 @@ export default {
         ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
     themeConfig: {
+        logo: '/logo.jpg',
+        nav: [
+            {text: '博客', link: '/'},
+            {text: 'GitHub', link: 'https://github.com/zhouding030'},
+            {text: '联系', link: 'https://github.com/zhouding030'}
+        ],
         sidebar: [
             {
                 text: "关于",
                 collapsible: true,
+                collapsed: true,
                 items: [
                     {
                         text: "作者简介",
@@ -23,6 +30,7 @@ export default {
             {
                 text: "DDD领域驱动设计",
                 collapsible: true,
+                collapsed: true,
                 items: [
                     {
                         text: "DDD整体理解",
@@ -48,9 +56,12 @@ export default {
             {
                  text: "架构师知识体系",
                  collapsible: true,
+                 collapsed: true,
                  items: [
                      {
                          text: "Java",
+                         collapsible: true,
+                         collapsed: true,
                          items: [
                             {
                                  text: "java基础知识",
@@ -70,60 +81,64 @@ export default {
                                  ]
                             },{
                                 text: "并发编程与多线程",
-                                link: "/java/并发编程与多线程/0.md"
+                                link: "/java/并发编程与多线程/Java并发编程介绍.md"
                             },{
                                  text: "集合原理",
-                                 link: "/java/集合原理/0.md"
+                                 link: "/java/集合原理/Java集合基础介绍.md"
                             },{
                                  text: "JVM原理",
-                                 link: "/java/JVM原理/0.md"
+                                 link: "/java/JVM原理/JVM内存模型.md"
                             },{
                                  text: "IO与网络编程",
-                                 link: "/java/IO与网络编程/0.md"
+                                 link: "/java/IO与网络编程/IO与网络编程介绍.md"
                             },{
                                  text: "设计模式",
-                                 link: "/java/设计模式/0.md"
+                                 link: "/java/设计模式/Java设计模式介绍.md"
                             }
                          ]
                      },{
                          text: "Spring 全家桶",
+                         collapsible: true,
+                         collapsed: true,
                          items: [
                             {
                                 text: "Spring 框架",
-                                link: "/spring全家桶/spring框架/0.md"
+                                link: "/spring全家桶/spring框架/Spring框架介绍.md"
                             },{
                                  text: "Spring MVC 框架",
-                                 link: "/spring全家桶/springMVC框架/0.md"
+                                 link: "/spring全家桶/springMVC框架/SpringMVC框架介绍.md"
                             },{
                                  text: "Spring Boot 框架",
-                                 link: "/spring全家桶/springboot框架/0.md"
+                                 link: "/spring全家桶/springboot框架/SpringBoot框架介绍.md"
                             },{
                                  text: "Spring Cloud 框架",
-                                 link: "/spring全家桶/springcloud框架/0.md"
+                                 link: "/spring全家桶/springcloud框架/SpringCloud框架介绍.md"
                             }
                          ]
                     },{
                         text: "框架、中间件、技术栈",
+                        collapsible: true,
+                        collapsed: true,
                         items: [
                             {
                                 text: "Dubbo 框架",
-                                link: "/框架、中间件、技术栈/dubbo/0.md"
+                                link: "/框架、中间件、技术栈/dubbo/Dubbo框架介绍.md"
                             },
                             {
                                 text: "Netty 框架",
-                                link: "/框架、中间件、技术栈/netty/0.md"
+                                link: "/框架、中间件、技术栈/netty/Netty框架介绍.md"
                             },
                             {
                                 text: "MyBatis 框架",
-                                link: "/框架、中间件、技术栈/mybatis/0.md"
+                                link: "/框架、中间件、技术栈/mybatis/MyBatis框架介绍.md"
                             },
                             {
                                 text: "MySQL",
-                                link: "/框架、中间件、技术栈/mysql/mysql工作原理.md"
+                                link: "/框架、中间件、技术栈/mysql/MySQL介绍.md"
                             },
                             {
                                 text: "Redis",
-                                link: "/框架、中间件、技术栈/redis/0.md"
+                                link: "/框架、中间件、技术栈/redis/Redis介绍.md"
                             },
                             {
                                 text: "Kafka",
@@ -140,6 +155,7 @@ export default {
              {
                   text: "数据结构与算法",
                   collapsible: true,
+                  collapsed: true,
                   items: [
                       {
                           text: "排序算法",
@@ -150,6 +166,7 @@ export default {
                {
                     text: "项目管理经验",
                     collapsible: true,
+                    collapsed: true,
                     items: [
                         {
                             text: "项目管理经验浅谈",
