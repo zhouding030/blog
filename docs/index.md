@@ -18,7 +18,7 @@ features:
     - title: DDD领域驱动设计
       details: 基于DDD领域驱动设计进行项目落地实战
     - title: 架构师知识体系
-      details: 个人架构师知识体系构建、完善
+      details: 个人架构师技能体系构建、完善
     - title: 数据结构与算法
       details: 个人对数据结构算法实现的一些经验记录
     - title: 项目管理经验

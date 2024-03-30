@@ -142,13 +142,84 @@ export default {
                             },
                             {
                                 text: "Kafka",
-                                link: "/框架、中间件、技术栈/kafka/0.md"
+                                link: "/框架、中间件、技术栈/kafka/Kafka介绍.md"
                             },
                             {
                                 text: "ElasticSearch",
-                                link: "/框架、中间件、技术栈/es/0.md"
+                                link: "/框架、中间件、技术栈/es/ElasticSearch介绍.md"
                             }
                         ]
+                    },{
+                        text: "架构方法论",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "架构初识",
+                                link: "/架构方法论/架构初识.md"
+                            }
+                        ]
+                    },{
+                        text: "服务稳定性治理",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "服务架构",
+                                link: "/服务稳定性治理/服务架构治理/0.md"
+                            },{
+                                text: "代码健康度治理",
+                                collapsible: true,
+                                collapsed: true,
+                                items: [
+                                    {
+                                        text: "代码扫描",
+                                        link: "/服务稳定性治理/代码健康度治理/代码扫描.md"
+                                    },{
+                                        text: "CodeReview",
+                                        link: "/服务稳定性治理/代码健康度治理/CodeReview.md"
+                                    }
+                                ]
+                            },{
+                                text: "标准化测试",
+                                collapsible: true,
+                                collapsed: true,
+                                items: [
+                                    {
+                                        text: "单测",
+                                        link: "/服务稳定性治理/标准化测试/单测.md"
+                                    },{
+                                        text: "功能测试",
+                                        link: "/服务稳定性治理/标准化测试/功能测试.md"
+                                    },{
+                                        text: "性能测试",
+                                        link: "/服务稳定性治理/标准化测试/性能测试.md"
+                                    }
+                                ]
+                            },{
+                                text: "服务运行监控",
+                                collapsible: true,
+                                collapsed: true,
+                                items: [
+                                    {
+                                        text: "服务链路追踪",
+                                        link: "/服务稳定性治理/服务运行监控/服务链路追踪.md"
+                                    },{
+                                        text: "服务日志",
+                                        link: "/服务稳定性治理/服务运行监控/服务日志.md"
+                                    },{
+                                        text: "服务监控",
+                                        link: "/服务稳定性治理/服务运行监控/服务监控.md"
+                                    },{
+                                        text: "服务告警",
+                                        link: "/服务稳定性治理/服务运行监控/服务告警.md"
+                                    }
+                                ]
+                            }
+                        ]
+                    },{
+                        text: "线上问题处理经验",
+                        link: "/线上问题处理/线上问题处理经验.md"
                     }
                  ]
             },
