@@ -13,7 +13,7 @@ export default {
         nav: [
             {text: '博客', link: '/'},
             {text: 'GitHub', link: 'https://github.com/zhouding030'},
-            {text: '联系', link: 'https://github.com/zhouding030'}
+            {text: '联系', link: '/public/0.md'}
         ],
         sidebar: [
             {
