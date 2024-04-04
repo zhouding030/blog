@@ -21,10 +21,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {
-                        text: "作者简介",
-                        link: "/aboutme/0.md",
-                    }
+                    {text: "作者简介",link: "/aboutme/0.md"},
+                    /*{text: "开源项目",link: "/aboutme/0.md"},*/
                 ],
             },
             {
@@ -98,7 +96,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "Spring框架介绍",link: "/spring框架/Spring框架介绍.md"}
+                    {text: "Spring框架介绍",link: "/spring框架/Spring框架介绍.md"},
+                    {text: "Spring知识点",link: "/spring框架/Spring知识点.md"}
                 ]
             },
             {
@@ -106,7 +105,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "SpringMVC框架介绍",link: "/springMVC框架/SpringMVC框架介绍.md"}
+                    {text: "SpringMVC框架介绍",link: "/springMVC框架/SpringMVC框架介绍.md"},
+                    {text: "SpringMVC知识点",link: "/springMVC框架/SpringMVC知识点.md"}
                 ]
             },
             {
@@ -114,7 +114,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "SpringBoot框架介绍",link: "/springboot框架/SpringBoot框架介绍.md"}
+                    {text: "SpringBoot框架介绍",link: "/springboot框架/SpringBoot框架介绍.md"},
+                    {text: "SpringBoot知识点",link: "/springboot框架/SpringBoot知识点.md"}
                 ]
             },
             {
@@ -122,7 +123,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "MyBatis框架介绍",link: "/mybatis/MyBatis框架介绍.md"}
+                    {text: "MyBatis框架介绍",link: "/mybatis/MyBatis框架介绍.md"},
+                    {text: "MyBatis知识点",link: "/mybatis/MyBatis知识点.md"}
                 ]
             },
             {
@@ -130,14 +132,16 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "SpringCloud框架介绍",link: "/springcloud框架/SpringCloud框架介绍.md"}
+                    {text: "Spring Cloud框架介绍",link: "/springcloud框架/SpringCloud框架介绍.md"},
+                    {text: "Spring Cloud知识点",link: "/springcloud框架/SpringCloud知识点.md"}
                 ]
             },{
                 text: "Dubbo 框架",
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "Dubbo框架介绍",link: "/dubbo/Dubbo框架介绍.md"}
+                    {text: "Dubbo框架介绍",link: "/dubbo/Dubbo框架介绍.md"},
+                    {text: "Dubbo知识点",link: "/dubbo/Dubbo知识点.md"}
                 ]
             },
             {
@@ -145,7 +149,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "Netty框架介绍",link: "/netty/Netty框架介绍.md"}
+                    {text: "Netty框架介绍",link: "/netty/Netty框架介绍.md"},
+                    {text: "Netty知识点",link: "/netty/Netty知识点.md"}
                 ]
             },
             {
@@ -153,7 +158,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "MySQL介绍",link: "/mysql/MySQL介绍.md"}
+                    {text: "MySQL介绍",link: "/mysql/MySQL介绍.md"},
+                    {text: "MySQL知识点",link: "/mysql/MySQL知识点.md"}
                 ]
             },
             {
@@ -161,7 +167,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "Redis介绍",link: "/redis/Redis介绍.md"}
+                    {text: "Redis介绍",link: "/redis/Redis介绍.md"},
+                    {text: "Redis知识点",link: "/redis/Redis知识点.md"}
                 ]
             },
             {
@@ -169,7 +176,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "Kafka介绍",link: "/kafka/Kafka介绍.md"}
+                    {text: "Kafka介绍",link: "/kafka/Kafka介绍.md"},
+                    {text: "Kafka知识点",link: "/kafka/Kafka知识点.md"}
                 ]
             },
             {
@@ -178,6 +186,38 @@ export default {
                 collapsed: true,
                 items: [
                     {text: "ElasticSearch介绍",link: "/es/ElasticSearch介绍.md"}
+                ]
+            },
+            {
+                text: "docker",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Docker介绍",link: "/docker/Docker介绍.md"}
+                ]
+            },
+            {
+                text: "k8s",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "k8s介绍",link: "/k8s/k8s介绍.md"}
+                ]
+            },
+            {
+                text: "操作系统",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "操作系统介绍",link: "/操作系统/操作系统介绍.md"}
+                ]
+            },
+            {
+                text: "计算机原理",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "计算机网络知识点",link: "/计算机原理/计算机网络知识点.md"}
                 ]
             },{
                 text: "架构方法论",
