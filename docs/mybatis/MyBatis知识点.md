@@ -109,7 +109,6 @@ Hibernate 是一个强大、方便、高效、复杂、间接、全自动化的�
 
 在学习 MyBatis 程序之前，需要了解一下 MyBatis 工作原理，以便于理解程序。MyBatis  的工作原理如下
 
-
 1）读取 MyBatis 配置文件：mybatis-config.xml 为 MyBatis 的全局配置文件，配置了  MyBatis 的运行环境等信息，例如数据库连接信息。
 
 2）加载映射文件。映射文件即 SQL 映射文件，该文件中配置了操作数据库的 SQL 语句， 需要在 MyBatis 配置文件 mybatis-config.xml 中加载。mybatis-config.xml 文件可以加 载多个映射文件，每个文件对应数据库中的一张表。
@@ -366,7 +365,6 @@ H);
 25 }
 26 }
 ```
-
 mapper和mapper.xml如下
 
 ```
@@ -374,13 +372,11 @@ mapper和mapper.xml如下
 2 //批量保存员工
 3 Long addEmp(Employee employee);
 4 }
-```
-
-```
 1 <mapper namespace="com.jourwon.mapper.EmployeeMapper"
 2 <!‐‐批量保存员工 ‐‐>
 3 <insert id="addEmp">
-4  insert into employee(lastName,email,gender) VALUES (#{lastName},#{email},#{gender})
+4 insert into employee(lastName,email,gender)
+5 values(#{lastName},#{email},#{gender})
 6 </insert>
 7 </mapper>
 ```
@@ -497,6 +493,7 @@ e order_id=#{id};
 12 </reslutMap>
 ```
 
+
 **Mapper** **编写有哪几种方式？**
 
 第一种：接口实现类继承 SqlSessionDaoSupport：使用此种方法需要编写mapper 接 口，mapper 接口实现类、mapper.xml 文件。
@@ -524,6 +521,7 @@ mapper 方法中可以 this.getSqlSession() 进行数据增删改查。
 3 ref="sqlSessionFactory"></property>
 4 </bean>
 ```
+
 
 第二种：使用 org.mybatis.spring.mapper.MapperFactoryBean：
 
@@ -586,7 +584,7 @@ mapper 接口中的方法名和 mapper.xml 中的定义的 statement 的 id 保�
 
 通过xml里面写SQL来绑定， 在这种情况下，要指定xml映射文件里面的namespace必须为 接口的全路径名。当Sql语句比较简单时候，用注解绑定， 当SQL语句比较复杂时候，用 xml绑定，一般用xml绑定的比较多。
 
-**使用MyBatis的mapper接口调用时有哪些要求**？
+**使用MyBatis的mapper接口调用时有哪些要求？**
 
 1、Mapper接口方法名和mapper.xml中定义的每个sql的id相同。
 
@@ -596,13 +594,14 @@ mapper 接口中的方法名和 mapper.xml 中的定义的 statement 的 id 保�
 
 4、Mapper.xml文件中的namespace即是mapper接口的类路径。
 
-**最佳实践中，通常一个Xml映射文件，都会写一个Dao接口与之对应，请问，这个Dao接口 的工作原理是什么？Dao接口里的方法，参数不同时，方法能重载吗**
+**通常一个Xml映射文件，都会写一个Dao接口与之对应，请问，这个Dao接口 的工作原理是什么？Dao接口里的方法，参数不同时，方法能重载吗**
 
-Dao接口，就是人们常说的Mapper接口，接口的全限名，就是映射文件中的namespace 的值，接口的方法名，就是映射文件中MappedStatement的id值，接口方法内的参数，就 是传递给sql的参数。Mapper接口是没有实现类的，当调用接口方法时，接口全限名+方法 名拼接字符串作为key值，可唯一定位一个MappedStatement，举例： com.mybatis3.mappers.StudentDao.findStudentById，可以唯一找到namespace为 com.mybatis3.mappers.StudentDao下面id = findStudentById的MappedStatement。 在Mybatis中，每一个<select>、<insert>、<update>、<delete>标签，都会被解析为 一个MappedStatement对象。
+Dao接口，就是人们常说的Mapper接口，接口的全限名，就是映射文件中的namespace 的值，接口的方法名，就是映射文件中MappedStatement的id值，接口方法内的参数，就 是传递给sql的参数。Mapper接口是没有实现类的，当调用接口方法时，接口全限名+方法 名拼接字符串作为key值，可唯一定位一个MappedStatement，举例： com.mybatis3.mappers.StudentDao.findStudentById，可以唯一找到namespace为 com.mybatis3.mappers.StudentDao下面id = findStudentById的MappedStatement。 在Mybatis中，每一个select、insert、update、delete标签，都会被解析为 一个MappedStatement对象。
 
 Dao接口里的方法，是不能重载的，因为是全限名+方法名的保存和寻找策略。
 
 Dao接口的工作原理是JDK动态代理，Mybatis运行时会使用JDK动态代理为Dao接口生成 代理proxy对象，代理对象proxy会拦截接口方法，转而执行MappedStatement所代表的 sql，然后将sql执行结果返回。
+
 
 **Mybatis的Xml映射文件中，不同的Xml映射文件，id是否可以重复？**
 
@@ -612,21 +611,21 @@ Dao接口的工作原理是JDK动态代理，Mybatis运行时会使用JDK动态�
 
 namespace，那么id不能重复；毕竟namespace不是必须的，只是最佳实践而已。
 
-原因就是namespace+id是作为Map<String, MappedStatement>的key使用的，如果没 有namespace，就剩下id，那么，id重复会导致数据互相覆盖。有了namespace，自然id 就可以重复，namespace不同，namespace+id自然也就不同。
+原因就是namespace+id是作为Map的key使用的，如果没 有namespace，就剩下id，那么，id重复会导致数据互相覆盖。有了namespace，自然id 就可以重复，namespace不同，namespace+id自然也就不同。
 
 **简述Mybatis的Xml映射文件和Mybatis内部数据结构之间的映射关系？**
 
-答：Mybatis将所有Xml配置信息都封装到All-In-One重量级对象Configuration内部。在 Xml映射文件中，<parameterMap>标签会被解析为ParameterMap对象，其每个子元素 会被解析为ParameterMapping对象。<resultMap>标签会被解析为ResultMap对象，其 每个子元素会被解析为ResultMapping对象。每一个<select>、<insert>、<update>、 <delete>标签均会被解析为MappedStatement对象，标签内的sql会被解析为BoundSql 对象。
+答：Mybatis将所有Xml配置信息都封装到All-In-One重量级对象Configuration内部。在 Xml映射文件中，parameterMap标签会被解析为ParameterMap对象，其每个子元素 会被解析为ParameterMapping对象。resultMap标签会被解析为ResultMap对象，其 每个子元素会被解析为ResultMapping对象。每一个select、insert、update、 delete标签均会被解析为MappedStatement对象，标签内的sql会被解析为BoundSql 对象。
 
 **Mybatis是如何将sql执行结果封装为目标对象并返回的？都有哪些映射形式？**
 
-第一种是使用<resultMap>标签，逐一定义列名和对象属性名之间的映射关系。
+第一种是使用resultMap标签，逐一定义列名和对象属性名之间的映射关系。
 
 第二种是使用sql列的别名功能，将列别名书写为对象属性名，比如T_NAME AS NAME， 对象属性名一般是name，小写，但是列名不区分大小写，Mybatis会忽略列名大小写，智 能找到与之对应对象属性名，你甚至可以写成T_NAME AS NaMe，Mybatis一样可以正常 工作。
 
 有了列名与属性名的映射关系后，Mybatis通过反射创建对象，同时使用反射给对象的属性 逐一赋值并返回，那些找不到映射关系的属性，是无法完成赋值的。
 
-**Xml映射文件中，除了常见的select|insert|updae|delete标签之外，还有哪些标签？** 还有很多其他的标签，<resultMap>、<parameterMap>、<sql>、<include>、 <selectKey>，加上动态sql的9个标签， trim|where|set|foreach|if|choose|when|otherwise|bind 等，其中<sql>为sql片段标签， 通过<include>标签引入sql片段，<selectKey>为不支持自增的主键生成策略标签。
+**Xml映射文件中，除了常见的select|insert|updae|delete标签之外，还有哪些标签？** 还有很多其他的标签，resultMap、parameterMap、sql、include、 selectKey，加上动态sql的9个标签， trim|where|set|foreach|if|choose|when|otherwise|bind 等，其中sql为sql片段标签， 通过include标签引入sql片段，selectKey为不支持自增的主键生成策略标签。
 
 **Mybatis映射文件中，如果A标签通过include引用了B标签的内容，请问，B标签能否定义 在A标签的后面，还是说必须定义在A标签的前面？**
 
