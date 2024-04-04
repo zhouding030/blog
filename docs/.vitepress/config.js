@@ -87,16 +87,17 @@ export default {
                          link: "/java/IO与网络编程/IO与网络编程介绍.md"
                     }
                  ]
-             },
-             {
+            },
+            {
                  text: "设计模式",
                  collapsible: true,
                  collapsed: true,
                  items: [
+                     {text: "Java设计模式介绍",link: "/设计模式/Java设计模式介绍.md"},
                      {text: "设计模式总结",link: "/设计模式/设计模式总结.md"}
                  ]
-             },
-             {
+            },
+            {
                 text: "Spring 框架",
                 collapsible: true,
                 collapsed: true,
