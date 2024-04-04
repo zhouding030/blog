@@ -54,176 +54,209 @@ export default {
                 ],
             },
             {
-                 text: "架构师知识体系",
+
+                 text: "Java",
                  collapsible: true,
                  collapsed: true,
                  items: [
-                     {
-                         text: "Java",
-                         collapsible: true,
-                         collapsed: true,
+                    {
+                         text: "java基础知识",
                          items: [
                             {
-                                 text: "java基础知识",
-                                 items: [
-                                    {
-                                        text: "java数据类型",
-                                        link: "/java/java基础知识/java数据类型.md",
-                                    },
-                                     {
-                                          text: "Object对象",
-                                          link: "/java/java基础知识/Object对象.md",
-                                     },
-                                     {
-                                          text: "其他...",
-                                          link: "/java/java基础知识/其他.md",
-                                     }
-                                 ]
-                            },{
-                                text: "并发编程与多线程",
-                                link: "/java/并发编程与多线程/Java并发编程介绍.md"
-                            },{
-                                 text: "集合原理",
-                                 link: "/java/集合原理/Java集合基础介绍.md"
-                            },{
-                                 text: "JVM原理",
-                                 link: "/java/JVM原理/JVM内存模型.md"
-                            },{
-                                 text: "IO与网络编程",
-                                 link: "/java/IO与网络编程/IO与网络编程介绍.md"
-                            },{
-                                 text: "设计模式",
-                                 link: "/java/设计模式/Java设计模式介绍.md"
-                            }
-                         ]
-                     },{
-                         text: "Spring 全家桶",
-                         collapsible: true,
-                         collapsed: true,
-                         items: [
-                            {
-                                text: "Spring 框架",
-                                link: "/spring全家桶/spring框架/Spring框架介绍.md"
-                            },{
-                                 text: "Spring MVC 框架",
-                                 link: "/spring全家桶/springMVC框架/SpringMVC框架介绍.md"
-                            },{
-                                 text: "Spring Boot 框架",
-                                 link: "/spring全家桶/springboot框架/SpringBoot框架介绍.md"
-                            },{
-                                 text: "Spring Cloud 框架",
-                                 link: "/spring全家桶/springcloud框架/SpringCloud框架介绍.md"
-                            }
+                                text: "java数据类型",
+                                link: "/java/java基础知识/java数据类型.md",
+                            },
+                             {
+                                  text: "Object对象",
+                                  link: "/java/java基础知识/Object对象.md",
+                             },
+                             {
+                                  text: "其他...",
+                                  link: "/java/java基础知识/其他.md",
+                             }
                          ]
                     },{
-                        text: "框架、中间件、技术栈",
-                        collapsible: true,
-                        collapsed: true,
-                        items: [
-                            {
-                                text: "Dubbo 框架",
-                                link: "/框架、中间件、技术栈/dubbo/Dubbo框架介绍.md"
-                            },
-                            {
-                                text: "Netty 框架",
-                                link: "/框架、中间件、技术栈/netty/Netty框架介绍.md"
-                            },
-                            {
-                                text: "MyBatis 框架",
-                                link: "/框架、中间件、技术栈/mybatis/MyBatis框架介绍.md"
-                            },
-                            {
-                                text: "MySQL",
-                                link: "/框架、中间件、技术栈/mysql/MySQL介绍.md"
-                            },
-                            {
-                                text: "Redis",
-                                link: "/框架、中间件、技术栈/redis/Redis介绍.md"
-                            },
-                            {
-                                text: "Kafka",
-                                link: "/框架、中间件、技术栈/kafka/Kafka介绍.md"
-                            },
-                            {
-                                text: "ElasticSearch",
-                                link: "/框架、中间件、技术栈/es/ElasticSearch介绍.md"
-                            }
-                        ]
+                        text: "并发编程与多线程",
+                        link: "/java/并发编程与多线程/Java并发编程介绍.md"
                     },{
-                        text: "架构方法论",
-                        collapsible: true,
-                        collapsed: true,
-                        items: [
-                            {
-                                text: "架构初识",
-                                link: "/架构方法论/架构初识.md"
-                            }
-                        ]
+                         text: "集合原理",
+                         link: "/java/集合原理/Java集合基础介绍.md"
                     },{
-                        text: "服务稳定性治理",
-                        collapsible: true,
-                        collapsed: true,
-                        items: [
-                            {
-                                text: "服务架构",
-                                link: "/服务稳定性治理/服务架构治理/0.md"
-                            },{
-                                text: "代码健康度治理",
-                                collapsible: true,
-                                collapsed: true,
-                                items: [
-                                    {
-                                        text: "代码扫描",
-                                        link: "/服务稳定性治理/代码健康度治理/代码扫描.md"
-                                    },{
-                                        text: "CodeReview",
-                                        link: "/服务稳定性治理/代码健康度治理/CodeReview.md"
-                                    }
-                                ]
-                            },{
-                                text: "标准化测试",
-                                collapsible: true,
-                                collapsed: true,
-                                items: [
-                                    {
-                                        text: "单测",
-                                        link: "/服务稳定性治理/标准化测试/单测.md"
-                                    },{
-                                        text: "功能测试",
-                                        link: "/服务稳定性治理/标准化测试/功能测试.md"
-                                    },{
-                                        text: "性能测试",
-                                        link: "/服务稳定性治理/标准化测试/性能测试.md"
-                                    }
-                                ]
-                            },{
-                                text: "服务运行监控",
-                                collapsible: true,
-                                collapsed: true,
-                                items: [
-                                    {
-                                        text: "服务链路追踪",
-                                        link: "/服务稳定性治理/服务运行监控/服务链路追踪.md"
-                                    },{
-                                        text: "服务日志",
-                                        link: "/服务稳定性治理/服务运行监控/服务日志.md"
-                                    },{
-                                        text: "服务监控",
-                                        link: "/服务稳定性治理/服务运行监控/服务监控.md"
-                                    },{
-                                        text: "服务告警",
-                                        link: "/服务稳定性治理/服务运行监控/服务告警.md"
-                                    }
-                                ]
-                            }
-                        ]
+                         text: "JVM原理",
+                         link: "/java/JVM原理/JVM内存模型.md"
                     },{
-                        text: "线上问题处理经验",
-                        link: "/线上问题处理/线上问题处理经验.md"
+                         text: "IO与网络编程",
+                         link: "/java/IO与网络编程/IO与网络编程介绍.md"
+                    },{
+                         text: "设计模式",
+                         link: "/java/设计模式/Java设计模式介绍.md"
                     }
                  ]
-            },
+             },
              {
+                text: "Spring 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Spring框架介绍",link: "/spring框架/Spring框架介绍.md"}
+                ]
+            },
+            {
+                text: "Spring MVC 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "SpringMVC框架介绍",link: "/springMVC框架/SpringMVC框架介绍.md"}
+                ]
+            },
+            {
+                text: "Spring Boot 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "SpringBoot框架介绍",link: "/springboot框架/SpringBoot框架介绍.md"}
+                ]
+            },
+            {
+                text: "MyBatis 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "MyBatis框架介绍",link: "/mybatis/MyBatis框架介绍.md"}
+                ]
+            },
+            {
+                text: "Spring Cloud 生态",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "SpringCloud框架介绍",link: "/springcloud框架/SpringCloud框架介绍.md"}
+                ]
+            },{
+                text: "Dubbo 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Dubbo框架介绍",link: "/dubbo/Dubbo框架介绍.md"}
+                ]
+            },
+            {
+                text: "Netty 框架",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Netty框架介绍",link: "/netty/Netty框架介绍.md"}
+                ]
+            },
+            {
+                text: "MySQL",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "MySQL介绍",link: "/mysql/MySQL介绍.md"}
+                ]
+            },
+            {
+                text: "Redis",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Redis介绍",link: "/redis/Redis介绍.md"}
+                ]
+            },
+            {
+                text: "Kafka",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "Kafka介绍",link: "/kafka/Kafka介绍.md"}
+                ]
+            },
+            {
+                text: "ElasticSearch",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "ElasticSearch介绍",link: "/es/ElasticSearch介绍.md"}
+                ]
+            },{
+                text: "架构方法论",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "架构初识",link: "/架构方法论/架构初识.md"},
+                    {text: "TOGAF",link: "/架构方法论/TOGAF.md"}
+                ]
+            },{
+                text: "服务稳定性治理",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {
+                        text: "服务架构治理",
+                        link: "/服务稳定性治理/服务架构治理/0.md"
+                    },{
+                        text: "代码健康度治理",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "代码扫描",
+                                link: "/服务稳定性治理/代码健康度治理/代码扫描.md"
+                            },{
+                                text: "CodeReview",
+                                link: "/服务稳定性治理/代码健康度治理/CodeReview.md"
+                            }
+                        ]
+                    },{
+                        text: "标准化测试",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "单测",
+                                link: "/服务稳定性治理/标准化测试/单测.md"
+                            },{
+                                text: "功能测试",
+                                link: "/服务稳定性治理/标准化测试/功能测试.md"
+                            },{
+                                text: "性能测试",
+                                link: "/服务稳定性治理/标准化测试/性能测试.md"
+                            }
+                        ]
+                    },{
+                        text: "服务运行监控",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "服务链路追踪",
+                                link: "/服务稳定性治理/服务运行监控/服务链路追踪.md"
+                            },{
+                                text: "服务日志",
+                                link: "/服务稳定性治理/服务运行监控/服务日志.md"
+                            },{
+                                text: "服务监控",
+                                link: "/服务稳定性治理/服务运行监控/服务监控.md"
+                            },{
+                                text: "服务告警",
+                                link: "/服务稳定性治理/服务运行监控/服务告警.md"
+                            }
+                        ]
+                    },
+                    {
+                        text: "线上问题处理经验",
+                        collapsible: true,
+                        collapsed: true,
+                        items: [
+                            {
+                                text: "常见线上问题",link: "/服务稳定性治理/线上问题处理/线上问题处理经验.md"
+                            }
+                        ]
+                    }
+                ]
+            },
+             /*{
                   text: "数据结构与算法",
                   collapsible: true,
                   collapsed: true,
@@ -233,7 +266,7 @@ export default {
                           link: "/algorithm/0.md",
                       }
                   ],
-             },
+             },*/
                {
                     text: "项目管理经验",
                     collapsible: true,
