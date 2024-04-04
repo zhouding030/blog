@@ -85,10 +85,15 @@ export default {
                     },{
                          text: "IO与网络编程",
                          link: "/java/IO与网络编程/IO与网络编程介绍.md"
-                    },{
-                         text: "设计模式",
-                         link: "/java/设计模式/Java设计模式介绍.md"
                     }
+                 ]
+             },
+             {
+                 text: "设计模式",
+                 collapsible: true,
+                 collapsed: true,
+                 items: [
+                     {text: "设计模式总结",link: "/设计模式/设计模式总结.md"}
                  ]
              },
              {
