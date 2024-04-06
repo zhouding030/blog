@@ -211,19 +211,11 @@ export default {
                 ]
             },
             {
-                text: "操作系统",
+                text: "计算机系统",
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "操作系统介绍",link: "/操作系统/操作系统介绍.md"}
-                ]
-            },
-            {
-                text: "计算机原理",
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    {text: "计算机网络知识点",link: "/计算机原理/计算机网络知识点.md"}
+                    {text: "计算机网络知识点",link: "/计算机系统/计算机网络知识点.md"}
                 ]
             },{
                 text: "架构方法论",
