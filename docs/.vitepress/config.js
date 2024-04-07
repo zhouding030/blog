@@ -195,6 +195,14 @@ export default {
                 ]
             },
             {
+                text: "RPC",
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    {text: "RPC序列化方式介绍及对比",link: "/RPC/RPC序列化方式介绍及对比.md"}
+                ]
+            },
+            {
                 text: "docker",
                 collapsible: true,
                 collapsed: true,
@@ -215,7 +223,8 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {text: "计算机网络知识点",link: "/计算机系统/计算机网络知识点.md"}
+                    {text: "计算机网络知识点",link: "/计算机系统/计算机网络知识点.md"},
+                    {text: "Linux操作系统",link: "/计算机系统/linux/Linux操作系统.md"}
                 ]
             },{
                 text: "架构方法论",
