@@ -36,8 +36,6 @@ Linux 系统的核心是内核。内核控制着计算机系统上的所有硬�
 
 从大的方面讲，Linux 体系结构可以分为两块：
 
-![Linux体系结构](11-Linux操作系统面试题（2020最新版）.assets/Linux体系结构.png)
-
 - 用户空间(User Space) ：用户空间又包括用户的应用程序(User  Applications)、C 库(C Library) 。
 - 内核空间(Kernel Space) ：内核空间又包括系统调用接口(System Call  Interface)、内核(Kernel)、平台架构相关的代码(Architecture-Dependent Kernel  Code) 。
 
@@ -156,15 +154,13 @@ Shell的所有功能，以及其他功能，使其更容易使用。从那以后
 
 Unix 哲学的一个体现，而 Linux 是重写 Unix 而来，所以这个概念也就传承了下来。在 Unix 系统中，把一切资源都看作是文件，包括硬件设备。UNIX系统把每个硬件都看成是一个文件，通常称为设备文件，这样用户就可以用读写文件的方式实现对硬件的访问。
 
-Linux 支持 5 种文件类型，如下图所示：![文件类型](11-Linux操作系统面试题（2020最新版）.assets/文件类型.jpg)
+Linux 支持 5 种文件类型。
 
 ## Linux 的目录结构是怎样的？
 
 这个问题，一般不会问。更多是实际使用时，需要知道。
 
-Linux 文件系统的结构层次鲜明，就像一棵倒立的树，  顶层是其根目录：
-
-![Linux的目录结构](11-Linux操作系统面试题（2020最新版）.assets/Linux的目录结构.jpg)
+Linux 文件系统的结构层次鲜明，就像一棵倒立的树，  顶层是其根目录。
 
 常见目录说明：
 
@@ -1222,7 +1218,7 @@ Vim是从 vi 发展出来的一个文本编辑器。代码补完、编译及错�
 
 以只读模式打开文件：vim -R /etc/passwd 。
 
-基本上 vi/vim 共分为三种模式，分别是命令模式（Command mode），输入模式（Insert mode）和底线命令模式（Last line mode）。简单的说，我们可以将这三个模式想成底下的图标来表示：![Vim工作模式](11-Linux操作系统面试题（2020最新版）.assets/Vim工作模式.jpg)
+基本上 vi/vim 共分为三种模式，分别是命令模式（Command mode），输入模式（Insert mode）和底线命令模式（Last line mode）。
 
 ## whereis 命令
 
