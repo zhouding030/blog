@@ -30,25 +30,12 @@ export default {
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    {
-                        text: "DDD整体理解",
-                        link: "/ddd/DDD整体理解.md",
-                    },{
-                        ext: "DDD落地实战",
-                       link: "/ddd/DDD落地实战.md",
-                    },{
-                        text: "DDD领域建模",
-                        link: "/ddd/DDD领域建模.md",
-                    },{
-                        text: "DDD划分限界上下文",
-                        link: "/ddd/DDD划分限界上下文.md",
-                    },{
-                         text: "DDD战术设计",
-                         link: "/ddd/DDD战术设计.md",
-                     },{
-                         text: "DDD构建代码结构",
-                         link: "/ddd/DDD构建代码结构.md",
-                     }
+                    {text: "DDD整体理解",link: "/ddd/DDD整体理解.md"},
+                    {text: "DDD落地实战",link: "/ddd/DDD落地实战.md"},
+                    {text: "DDD领域建模",link: "/ddd/DDD领域建模.md"},
+                    {text: "DDD划分限界上下文",link: "/ddd/DDD划分限界上下文.md"},
+                    {text: "DDD战术设计",link: "/ddd/DDD战术设计.md"},
+                    {text: "DDD构建代码结构",link: "/ddd/DDD构建代码结构.md"}
                 ],
             },
             {
@@ -60,32 +47,36 @@ export default {
                     {
                          text: "java基础知识",
                          items: [
-                            {
-                                text: "java数据类型",
-                                link: "/java/java基础知识/java数据类型.md",
-                            },
-                             {
-                                  text: "Object对象",
-                                  link: "/java/java基础知识/Object对象.md",
-                             },
-                             {
-                                  text: "其他...",
-                                  link: "/java/java基础知识/其他.md",
-                             }
+                            {text: "java基础",link: "/java/java基础知识/java基础.md"},
+                            {text: "java数据类型",link: "/java/java基础知识/java数据类型.md"},
+                            {text: "Object对象",link: "/java/java基础知识/Object对象.md"}
                          ]
                     },{
                         text: "并发编程与多线程",
-                        link: "/java/并发编程与多线程/Java并发编程介绍.md"
+                        items: [
+                            {text: "Java并发编程介绍",link: "/java/并发编程与多线程/Java并发编程介绍.md"},
+                            {text: "并发编程知识点",link: "/java/并发编程与多线程/并发编程知识点.md"}
+                         ]
                     },{
                          text: "集合原理",
-                         link: "/java/集合原理/Java集合基础介绍.md"
+                         items: [
+                             {text: "Java集合基础介绍",link: "/java/集合原理/Java集合基础介绍.md"},
+                             {text: "Java集合知识点",link: "/java/集合原理/Java集合知识点.md"}
+                          ]
                     },{
                          text: "JVM原理",
-                         link: "/java/JVM原理/JVM内存模型.md"
+                         items: [
+                             {text: "JVM内存模型",link: "/java/JVM原理/JVM内存模型.md"},
+                             {text: "GC root对象",link: "/java/JVM原理/GC root对象.md"},
+                             {text: "Java虚拟机",link: "/java/JVM原理/Java虚拟机.md"}
+                          ]
                     },{
                          text: "IO与网络编程",
                          link: "/java/IO与网络编程/IO与网络编程介绍.md"
-                    }
+                    },{
+                          text: "异常",
+                          link: "/java/java异常/Java异常.md"
+                     }
                  ]
             },
             {
